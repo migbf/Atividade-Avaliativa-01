@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+int main(){
+    // atividade 03 o perfil correspondente pela data de nascimento
+  setlocale(LC_ALL, "portuguese");
+
+  int x, y, d, m, a;
+
+   printf("que dia voce nasceu:");
+   scanf("%d", &d);
+
+   printf("\n que mes voce nasceu:");
+   scanf("%d", &m);
+
+   printf("\n que ano voce nasceu:");
+   scanf("%d", &a);
+
+  x = d * 100 + m;
+  y = x + a;
+  x = y % 100;
+  y = (y-x)/100;
+  x += y;
+  x = x % 5;
+
+  switch (x){
+  case 0:
+    printf(" \n De acordo com sua data de nascimento seu perfil é Tímido");
+    break;
+  case 1:
+    printf("\n De acordo com sua data de nascimento seu perfil é Sonhador");
+    break;
+  case 2:
+    printf("\n De acordo com sua data de nascimento seu perfil é Paquerador");
+    break;
+  case 3:
+    printf("\n De acordo com sua data de nascimento seu perfil é Atraente");
+    break;
+  case 4:
+    printf("\n De acordo com sua data de nascimento seu perfil é Irresistível");
+    break;
+  }
+
+  return 0;
+}
