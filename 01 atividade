@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    // tabuada
+    setlocale(LC_ALL, "Portuguese");
+
+
+    int v1, v2;
+
+    printf("diga 1 numero para ver sua tabuada: ");
+    scanf("%d", &v1);
+    printf("\n seu numero é : %d ", v1);
+
+    v2 = v1 * 1;
+    printf("\n tabuada x1 é: %d", v2);
+    v2 = v1 * 2;
+    printf("\n tabuada x2 é: %d", v2);
+    v2 = v1 * 3;
+    printf("\n tabuada x3 é: %d", v2);
+    v2 = v1 * 4;
+    printf("\n tabuada x4 é: %d", v2);
+    v2 = v1 * 5;
+    printf("\n tabuada x5 é: %d", v2);
+    v2 = v1 * 6;
+    printf("\n tabuada x6 é: %d", v2);
+    v2 = v1 * 7;
+    printf("\n tabuada x7 é: %d", v2);
+    v2 = v1 * 8;
+    printf("\n tabuada x8 é: %d", v2);
+    v2 = v1 * 9;
+    printf("\n tabuada x9 é: %d", v2);
+    v2 = v1 * 10;
+    printf("\n tabuada x10 é: %d", v2);
+
+    return 0;
+}
