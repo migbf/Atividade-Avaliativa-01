@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+    //atividade 05
+  setlocale(LC_ALL, "portuguese");
+
+  struct{
+  char n[50], e[50], t[15];
+  }Dados;
+
+  int digN, digE, digT;
+  digN = 0;
+  digE = 0;
+  digT = 0;
+
+  printf("=========================================================\n");
+
+  printf(" Diga seu nome: ");
+  scanf("%s", Dados.n);
+
+  printf("Diga seu e-mail: ");
+  scanf("%s", Dados.e);
+
+  printf("Diga seu telefone: ");
+  scanf("%s", Dados.t);
+
+  printf("=========================================================\n");
+
+  while (Dados.n[digN] != '\0'){
+    digN++;
+  }
+  printf(" Seu nome possui %d dígitos.\n", digN);
+  while (Dados.e[digE] != '\0'){
+    digE++;
+  }
+  printf(" Seu E-mail possui %d dígitos.\n", digE);
+  while (Dados.t[digT] != '\0'){
+    digT++;
+  }
+  printf("Seu Telefone possui %d dígitos.\n", digT);
+
+  printf("=========================================================\n");
+
+  return 0;
+}
